@@ -90,7 +90,6 @@ def download_tests():
             f.write(response.content)
 
 def main():
-    download_tests()
     base_options = python.BaseOptions(model_asset_path='gesture_recognizer.task')
     options = vision.GestureRecognizerOptions(base_options=base_options)
     recognizer = vision.GestureRecognizer.create_from_options(options)
