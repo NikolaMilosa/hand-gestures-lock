@@ -103,7 +103,6 @@ def main():
         int_timestamp += 1
 
         frame, gestures = qu.get()
-        cv2.imshow('Frame', frame)
 
         if len(gestures) > 0 and gestures[0][0].category_name != last_gesture and gestures[0][0].category_name != "None":
             last_gesture = gestures[0][0].category_name
